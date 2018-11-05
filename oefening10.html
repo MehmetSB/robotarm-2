@@ -13,15 +13,14 @@
             // Jou instructies volgen hier
             for(var i = 0; i < 9;){
               robotArm.grab();
-              for(var j = 0; j < 9-i; j++){
+              for(var j = 0; j < 9 - i; j++){
                 robotArm.moveRight();
               }
               robotArm.drop();
               i++;
-              for(var k = 0; k < 9-i; k++){
+              for(var k = 0; k < 9 - i; k++){
                 robotArm.moveLeft();
               }
-              i++
             }
             // De door jou opgegeven instructies uitvoeren
             robotArm.run();
